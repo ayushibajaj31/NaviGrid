@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Carpool & Route Planner</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NaviGrid-Public Transport Optimizer</h1>
+
+        <form id="route-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="start" placeholder="Start Location" required>
+            <input type="text" id="destination" placeholder="Destination" required>
+            <button type="submit">Start Journey</button>
+        </form>
+
+        <div id="carpool-options"></div>
+
+        <div id="time-info" class="info-section"></div>
+
+        <div id="location-update" style="margin-top: 20px;">
+            <input type="text" id="current-location" placeholder="Where are you now?">
+            <button id="update-location">Update Location</button>
+        </div>
+
+        <div id="result" class="info-section"></div>
+
+        <div id="map" style="height: 500px; margin-top: 20px;"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
